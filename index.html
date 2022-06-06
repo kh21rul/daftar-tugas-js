@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi List Tugas Sederhana</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            Aplikasi Daftar Tugas Sederhana
+        </h1>
+    </header>
+
+    <div class="wrapper">
+        <div class="container bg-white shadow input">
+            <h2 class="container-header text-center">Masukkan Tugas Baru</h2>
+            <form class="form" action="#" id="form">
+                <div class="form-group form-title">
+                    <label for="title">Nama Tugas</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="mataKuliah">Mata Kuliah</label>
+                    <input type="text" id="mataKuliah" name="mataKuliah" required>
+                </div>
+                <div class="form-group form-title">
+                    <label for="deadline">Deadline Pengumpulan</label>
+                    <input type="date" id="deadline" name="deadline" required>
+                </div>
+                <input type="submit" value="Tambahkan Tugas" name="Submit" class="btn-submit">
+            </form>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">Tekan Ceklis Jika Tugas Sudah Selesai</h2>
+            <div class="list-item" id="works">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="container-header">List Tugas yang Sudah Diselesaikan</h2>
+            <div class="list-item" id="completed-works">
+
+            </div>
+        </div>
+
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
